@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  background-color: #edf6db;
+  background-image: url("./public/greenbg.png");
+  font-family: Lato, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
+  color: #1f1f1f;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: minmax(0, 1fr); /* Evil grid bug */
+  row-gap: 1rem;
+  line-height: 1.5;
+}
+
+/* Fix scrollbars moving over the body if possible */
+@media (width > 800px) {
+  :root {
+    scrollbar-gutter: stable both-edges;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", Rockwell, "Rockwell Nova", "Roboto Slab",
+    "DejaVu Serif", "Sitka Small", serif;
+  text-decoration: underline 0.05em solid #b99470;
+  text-underline-offset: 0.125em;
+  margin-block: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-decoration-style: wavy;
+}
+
+h2 {
+  font-size: 1.75rem;
+  text-decoration-line: none;
+  border-bottom: 3px double;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+hr {
+  border-width: 2px 0 0;
+  border-style: solid;
+  margin-inline: 1ch;
+}
+
+a {
+  color: #8b932c;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 70ms ease;
+
+  &:hover {
+    text-decoration-color: #8b932c;
+  }
+}
+
+ul {
+  padding-inline-start: 2rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Layout */
+
+main {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fefae0;
+  border: 2px solid;
+  box-shadow: 0 4px 4px #0004;
+}
+
+body > footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  column-gap: 1rem;
+}
+
+article section > :first-child {
+  margin-top: 0.5rem;
+}
+
+nav ul li {
+  list-style: none url("./public/flan.gif");
+  line-height: 1.75;
+}
+
+aside nav ul {
+  margin-bottom: 2.25rem;
+}
+
+/* Specific Styles */
+
+.container {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.sidebar-split {
+  display: grid;
+  gap: 1rem;
+
+  & aside {
+    border-bottom: 2px dotted;
+  }
+}
+
+@media (width > 600px) {
+  .sidebar-split {
+    grid-template-columns: 15ch 1fr;
+
+    & aside {
+      border-bottom: 0;
+      border-right: 2px dotted;
+    }
+  }
+}
+
+.button-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.float-right {
+  float: right;
+  margin-top: 0.5em;
+  margin-left: 1.5ch;
+}
+
+.clearfix {
+  clear: both;
+}
