@@ -94,9 +94,10 @@ img {
 main {
   padding: 1rem;
   border-radius: 8px;
-  background: #fefae0;
-  border: 2px solid;
-  box-shadow: 0 4px 4px #0004;
+  background-color: #fefae0;
+  background-image: linear-gradient(to bottom, #fcfaebcc, transparent 300px);
+  border: 2px solid #c6ceb4;
+  box-shadow: 0 4px 4px #8b932c44;
 }
 
 body > footer {
