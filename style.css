@@ -153,14 +153,23 @@ aside nav ul {
   }
 }
 
-@media (width > 600px) {
-  .sidebar-split {
-    grid-template-columns: 15ch 1fr;
+.card {
+  padding: 0.5rem;
+  background: #f7f3d9;
+  border: 1px solid #e0dcc3;
+  border-radius: 8px;
 
-    & aside {
-      border-bottom: 0;
-      border-right: 2px dotted;
-    }
+  & > :first-child {
+    margin-top: 0;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  &.center {
+    width: fit-content;
+    max-width: 85%;
+    margin-inline: auto;
   }
 }
 
@@ -174,12 +183,24 @@ aside nav ul {
   justify-content: center;
 }
 
-.float-right {
-  float: right;
-  margin-top: 0.5em;
-  margin-left: 1.5ch;
-}
-
 .clearfix {
   clear: both;
+}
+
+/* Desktop only styles */
+@media (width > 600px) {
+  .sidebar-split {
+    grid-template-columns: 15ch 1fr;
+
+    & aside {
+      border-bottom: 0;
+      border-right: 2px dotted;
+    }
+  }
+  .float-right {
+    float: right;
+    margin-top: 0.5em;
+    margin-left: 1.5ch;
+    max-width: 50%;
+  }
 }
