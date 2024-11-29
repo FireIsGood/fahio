@@ -85,6 +85,7 @@ img {
   display: block;
   margin: 0 auto;
   max-height: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -123,6 +124,7 @@ aside nav ul {
 
 .container {
   max-width: 960px;
+  width: 100%;
   margin-inline: auto;
 }
 
