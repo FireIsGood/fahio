@@ -6,8 +6,7 @@ body {
   margin: 1rem;
   background-color: #edf6db;
   background-image: url("./public/greenbg.png");
-  font-family: Lato, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif;
+  font-family: Lato, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
   color: #1f1f1f;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -29,8 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif", Rockwell, "Rockwell Nova", "Roboto Slab",
-    "DejaVu Serif", "Sitka Small", serif;
+  font-family: "Noto Serif", Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif;
   text-decoration: underline 0.05em solid #b99470;
   text-underline-offset: 0.125em;
   margin-block: 1rem;
