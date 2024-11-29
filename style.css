@@ -204,3 +204,32 @@ aside nav ul {
     max-width: 50%;
   }
 }
+
+/* Fun */
+.lsd {
+  animation: lsd 1s linear infinite;
+  color: var(--lsd);
+  text-shadow: var(--lsd) 1px 0 10px;
+}
+
+@keyframes lsd {
+  0% {
+    --lsd: #829f53;
+  }
+  33% {
+    --lsd: #a581c7;
+  }
+  66% {
+    --lsd: #1ca7ab;
+  }
+  100% {
+    --lsd: #829f53;
+  }
+}
+
+/* Give type for interpolation */
+@property --lsd {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #000;
+}
