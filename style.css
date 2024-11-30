@@ -172,6 +172,11 @@ aside nav ul {
     max-width: 85%;
     margin-inline: auto;
   }
+
+  &.outline {
+    background: unset;
+    border: 1px dashed #c6ceb4;
+  }
 }
 
 .button-list {
