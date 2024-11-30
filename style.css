@@ -95,7 +95,7 @@ img {
 main {
   min-height: 60vh;
   min-height: 60lvh;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   border-radius: 8px;
   background-color: #fefae0;
   background-image: linear-gradient(to bottom, #fcfaebcc, transparent 300px);
@@ -114,6 +114,7 @@ body > footer {
 main > article {
   display: grid;
   grid-template-rows: 1fr auto;
+  padding-bottom: 0.5rem;
 
   section,
   aside {
