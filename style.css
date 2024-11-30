@@ -150,7 +150,7 @@ aside nav ul {
   gap: 1rem;
 
   & aside {
-    border-bottom: 2px dotted;
+    border-bottom: 2px dotted #c6ceb4;
   }
 }
 
@@ -200,7 +200,7 @@ aside nav ul {
 
     & aside {
       border-bottom: 0;
-      border-right: 2px dotted;
+      border-right: 2px dotted #c6ceb4;
     }
   }
   .float-right {
