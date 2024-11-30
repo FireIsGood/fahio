@@ -70,7 +70,7 @@ hr {
 
 a {
   color: #8b932c;
-  text-decoration-color: transparent;
+  text-decoration-color: #8b932c33;
   transition: text-decoration-color 70ms ease;
 
   &:hover {
