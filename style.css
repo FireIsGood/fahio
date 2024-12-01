@@ -137,7 +137,7 @@ nav ul li {
 }
 
 aside nav ul {
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -154,6 +154,7 @@ aside nav ul {
   gap: 1rem;
 
   & aside {
+    padding-bottom: 1.25rem;
     border-bottom: 2px dotted #c6ceb4;
   }
 }
@@ -203,6 +204,7 @@ aside nav ul {
     grid-template-columns: 15ch 1fr;
 
     & aside {
+      padding-top: 0.5rem;
       border-bottom: 0;
       border-right: 2px dotted #c6ceb4;
     }
