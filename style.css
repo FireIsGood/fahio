@@ -1,13 +1,32 @@
+/* Variables */
+:root {
+  --fg-clr: #1f1f1f;
+  --bg-clr: #edf6db;
+
+  --article-clr: #fefae0;
+  --article-lighter-clr: #fcfaeb;
+
+  --card-clr: #f7f3d9;
+
+  --border-1: #c6ceb4;
+  --border-2: #e0dcc3;
+
+  /* Colors */
+  --primary-1: #8b932c;
+  --secondary-1: #b99470;
+  --tertiary-1: #e7cccc;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 1rem;
-  background-color: #edf6db;
+  background-color: var(--bg-clr);
   background-image: url("./public/greenbg.png");
   font-family: Lato, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
-  color: #1f1f1f;
+  color: var(--fg-clr);
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: minmax(0, 1fr); /* Evil grid bug */
@@ -23,7 +42,7 @@ body {
 }
 
 ::selection {
-  background-color: #e7ccccee;
+  background-color: rgb(from var(--tertiary-1) r g b / 90%);
 }
 
 h1,
@@ -33,7 +52,7 @@ h4,
 h5,
 h6 {
   font-family: "Noto Serif", Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif;
-  text-decoration: underline 0.05em solid #b99470;
+  text-decoration: underline 0.05em solid var(--secondary-1);
   text-underline-offset: 0.125em;
   margin-block: 1.5rem 1rem;
 }
@@ -73,12 +92,12 @@ hr {
 }
 
 a {
-  color: #8b932c;
-  text-decoration-color: #8b932c33;
+  color: var(--primary-1);
+  text-decoration-color: rgb(from var(--primary-1) r g b / 25%);
   transition: text-decoration-color 70ms ease;
 
   &:hover {
-    text-decoration-color: #8b932c;
+    text-decoration-color: var(--primary-1);
   }
 }
 
@@ -101,10 +120,10 @@ main {
   min-height: 60lvh;
   padding: 1.25rem 1rem;
   border-radius: 8px;
-  background-color: #fefae0;
-  background-image: linear-gradient(to bottom, #fcfaebcc, transparent 300px);
-  border: 2px solid #c6ceb4;
-  box-shadow: 0 4px 4px #8b932c44;
+  background-color: var(--article-clr);
+  background-image: linear-gradient(to bottom, rgb(from var(--article-lighter-clr) r g b / 80%), transparent 300px);
+  border: 2px solid var(--border-1);
+  box-shadow: 0 4px 4px rgb(from var(--primary-1) r g b / 25%);
 }
 
 body > footer {
@@ -155,14 +174,14 @@ aside nav ul {
 
   & aside {
     padding-bottom: 1.25rem;
-    border-bottom: 2px dotted #c6ceb4;
+    border-bottom: 2px dotted var(--border-1);
   }
 }
 
 .card {
   padding: 0.5rem;
-  background: #f7f3d9;
-  border: 1px solid #e0dcc3;
+  background: var(--card-clr);
+  border: 1px solid var(--border-2);
   border-radius: 8px;
 
   & > :first-child {
@@ -180,7 +199,7 @@ aside nav ul {
 
   &.outline {
     background: unset;
-    border: 1px dashed #c6ceb4;
+    border: 1px dashed var(--border-1);
   }
 }
 
@@ -206,7 +225,7 @@ aside nav ul {
     & aside {
       padding-top: 0.5rem;
       border-bottom: 0;
-      border-right: 2px dotted #c6ceb4;
+      border-right: 2px dotted var(--border-2);
     }
   }
   .float-right {
